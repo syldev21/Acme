@@ -24,6 +24,21 @@ export default async function Page() {
                     value={numberOfCustomers}
                     type="customers"
                 />
+                <Card
+                    title="Total Invoices"
+                    value={numberOfInvoices}
+                    type="invoices"
+                />
+                <Card
+                    title="Total Paid Invoices"
+                    value={totalPaidInvoices}
+                    type="collected"
+                />
+                <Card
+                    title="Total Pending Invoices"
+                    value={totalPendingInvoices}
+                    type="pending"
+                />
             </div>
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
                 <RevenueChart revenue={revenue}/>
